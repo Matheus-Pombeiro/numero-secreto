@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*Font Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+
+    /*Fonts*/
+    --font-principal: 'Montserrat', sans-serif;
+
+    /*Cores*/
+    --bg-color-1: #90AACB;
+    --bg-color-2: #FFB085;
+    --bg-color-3: #F9D5A7;
+    --primary-color: #FEF1E6;
+   
+
+}
+
+/*Estilização Geral da Página*/
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: linear-gradient(to right, var(--bg-color-1), var(--bg-color-2), var(--bg-color-3));
+    color: var(--primary-color);
+    font-family: var(--font-principal);
+    text-align: center;
+}
+
+/*Cabeçalho*/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/*Main*/
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.principal__container, .mensagem {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mensagem p {
+    font-size: 1rem;
+}
+
+.box {
+    width: fit-content;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    font-size: 3rem;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-jogar {
+    padding: .6rem 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+/*Telas de Tablets e Desktops*/
+
+@media screen and (min-width: 768px) {
+
+    /*Cabeçalho*/
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    /*Main*/
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .mensagem p {
+        font-size: 1.7rem;
+    }
+
+}
